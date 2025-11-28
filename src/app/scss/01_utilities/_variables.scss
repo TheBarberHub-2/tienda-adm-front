@@ -6,14 +6,14 @@ $widths:(0px, 4px, 8px, 12px, 24px, 32px, 725px, 100%);
 $heights:(30px);
 
 $colores:( //Definicion de paleta de colores, normalmente en escala de 9 tonos de luminosidad
-  'azul': (#0045A6,#73CEE6),
-  'gris': (#808080, #F2F2F2),
-  'rojo': (#E61919),
+  'azul': (#03416D, #0257A1, #026BD4, #0676FE, #398BFE, #6CA2FE, #9FBFFE, #CDDBFE, #FFFFFF),
+  'gris': (#000000, #171717, #303030, #474747, #5E5E5E, #757575, #8F8F8F, #A6A6A6, #BDBDBD),
+  'rojo': (#190501, #500A01, #880D01, #C10701, #F90101, #FE3E34, #FE796D, #FEB0A5, #FEE2DC),
   'blanco': (#FFFFFF),
-  'amarillo': (#C69C10),
-  'naranja':(#D18100),
-  'verde': (#006b3b, #94c933),
-  'morado': (#8228d600, #5a1f6600),
+  'amarillo': (#504002, #887402, #BBA502, #F4E301, #FEF72A, #FCFE62, #F9FE95, #F9FECD, #FFFFFF),
+  'naranja':(#190801, #521E05, #84370B, #BA5812, #E7781D, #EEA153, #F5C084, #FBE1BC, #FFF9F0),
+  'verde': (#081901, #144804, #1E7109, #259E10, #2AC615, #32E925, #51F04C, #78F77A, #A1FDA5),
+  'morado': (#0F0119, #34044D, #570A7B, #8211AC, #AC17D9, #CC3CEC, #DE68F3, #F09AF9, #FAC8FE),
   'negro': (#000000),
-  'rosa': (#ac2779)
+  'rosa': (#190115, #49083B, #791560, #A2257D, #CD3299, #DA5DAA, #EA8AC2, #F7B6D8, #FEE6F2)
 );
