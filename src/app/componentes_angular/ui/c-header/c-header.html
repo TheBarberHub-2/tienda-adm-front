@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <h2 [style.color]="'orange'">TheBarberHub</h2>
+
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/">Inicio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/tareas">Clientes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/panelTareas">Trabajadores</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/panelTareas">Peluquerias</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/panelTareas">HistorialPedidos</a>
+    </li>
+    <li [style.color]="'orange'" class="nav-link">{{ numeroTareas }} Pedidos de Hoy</li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/panelTareas">Configuracion</a>
+    </li>
+  </ul>
+</nav>
