@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CHeader } from './c-header';
+import { CHeaderBootstrap } from './c-header-bootstrap';
 
-describe('CHeader', () => {
-  let component: CHeader;
-  let fixture: ComponentFixture<CHeader>;
+describe('CHeaderBootstrap', () => {
+  let component: CHeaderBootstrap;
+  let fixture: ComponentFixture<CHeaderBootstrap>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CHeader]
+      imports: [CHeaderBootstrap]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CHeader);
+    fixture = TestBed.createComponent(CHeaderBootstrap);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

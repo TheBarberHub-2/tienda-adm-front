@@ -1,11 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CHeader } from "../../ui/c-header/c-header";
+import { CHeaderBootstrap } from '../../ui/c-header/c-header-bootstrap/c-header-bootstrap';
 import { CFooter } from '../../ui/c-footer/c-footer';
+import { CHeaderBEM } from '../../ui/c-header/c-header-bem/c-header-bem';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CHeader, CFooter],
+  imports: [RouterOutlet, CHeaderBootstrap,CHeaderBEM, CFooter],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

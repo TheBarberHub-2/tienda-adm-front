@@ -7,7 +7,7 @@ import { HTTPService } from './http.service'
   providedIn: 'root'
 })
 
-export class TareaService {
+export class PedidoService {
   /*url: string = 'tareas/'
 
   private _totalTareas: BehaviorSubject<number> = new BehaviorSubject<number>(0)
