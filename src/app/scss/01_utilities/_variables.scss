@@ -1,17 +1,83 @@
-$paddings:(0px, 6px, 12px, 24px, 48px, 64px);
-$margins: (0px, 6px, 12px, 24px, 48px, 64px);
-$font-size-lista:(14px, 24px, 36px);
-$font-families:(
-    "default": ('Segoe UI', Tahoma, Geneva, Verdana, sans-serif)
+$paddings: (
+  0px,
+  6px,
+  12px,
+  24px,
+  48px,
+  64px
 );
-$font-weight:(700);
-$gap:(4px, 8px, 12px, 16px, 20px);
-$border-radius:(50);
-$box-shadow:(none, 0px 1px 3px rgba(0, 0, 0, 0.2));
-$widths:(0px, 4px, 8px, 12px, 24px, 32px, 725px, 100%); 
-$heights:(30px);
+$margins: (
+  0px,
+  6px,
+  12px,
+  24px,
+  48px,
+  64px
+);
+$font-size-lista: (
+  8px,
+  14px,
+  16px,
+  18px,
+  20px,
+  24px,
+  36px,
+  48px,
+  60px,
+  72px,
+  84px,
+  96px
+);
 
-$colores:( //Definicion de paleta de colores, normalmente en escala de 9 tonos de luminosidad
+$font-families: (
+  "default": ('Segoe UI', Tahoma, Geneva, Verdana, sans-serif)
+);
+$font-weight: (
+  300,
+  400,
+  500,
+  600,
+  700,
+  800,
+  900,
+  1000
+);
+$gap: (
+  4px,
+  8px,
+  12px,
+  16px,
+  20px
+);
+$border-radius: (
+  50
+);
+$box-shadow: (
+  none,
+  0px 1px 3px rgba(0, 0, 0, 0.2)
+);
+$widths: (
+  0px,
+  4px,
+  8px,
+  12px,
+  24px,
+  32px,
+  725px,
+  100%
+);
+$heights: (
+  5%,
+  10%,
+  15%,
+  20%,
+  25%,
+  50%,
+  100%
+);
+
+$colores: (
+  //Definicion de paleta de colores, normalmente en escala de 9 tonos de luminosidad
   'azul': (#03416D, #0257A1, #026BD4, #0676FE, #398BFE, #6CA2FE, #9FBFFE, #CDDBFE, #FFFFFF),
   'gris': (#000000, #171717, #303030, #474747, #5E5E5E, #757575, #8F8F8F, #A6A6A6, #BDBDBD),
   'rojo': (#190501, #500A01, #880D01, #C10701, #F90101, #FE3E34, #FE796D, #FEB0A5, #FEE2DC),

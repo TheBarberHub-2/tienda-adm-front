@@ -1,16 +1,18 @@
 .c-header {
     --c-header-font-family: var(--mlt-sys-font-family-default);
-    --c-header-width: var(--mlt-sys-fixed-width-725);
-    --c-header-padding: var(--mlt-sys-padding-5);
+    --c-header-padding: var(--mlt-sys-padding-4);
     --c-header-gap: var(--mlt-sys-gap-5);
     --c-header-background-color: var(--color-gris-3);
+    --c-header-height: var(--mlt-sys-height-2);
 
     // Header_Brand
-    --c-header-box-title-font-size: var(--mlt-sys-font-size-5);
-    --c-header-font-title-color: var(--color-naranja-3);
-    --c-header-title-font-weight: var(--mlt-sys-font-weight-700);
-    // Header_Text
-    --c-header-navegador: var(--mlt-sys-gray-shade-10);
+    --c-header-box-title-font-size: var(--mlt-sys-font-size-7);
+    --c-header-font-title-color: var(--color-naranja-5);
+    --c-header-title-font-weight: var(--mlt-sys-font-weight-4);
+    // Header_Navigate_Text
+    --c-header-box-margin: var(--mlt-sys-margin-3);
+    --c-header-box-navigate-font-size: var(--mlt-sys-font-size-4);
+    --c-header-general-color-words: var(--color-blanco-1);
 
     display: flex;
     flex-direction: row;
@@ -19,28 +21,37 @@
 
     &__brand-name {
         font-size: var(--c-header-box-title-font-size);
-        margin: 0;
+        color: var(--c-header-font-title-color);
+        font-family: var(--c-header-font-family);
+        font-size: var(--c-header-box-title-font-size);
+        font-weight: var(--c-header-title-font-weight);
     }
 
     &__nav {
         display: flex;
-        margin-left: auto;
-        list-style: none;
-        padding: 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        font-size: var(--c-header-box-navigate-font-size);
     }
 
     &__item {
-        margin-left: 1rem;
+        margin-left: var(--c-header-box-margin);
+    }
+
+    &__item--highlight {
+        font-weight: var(--c-header-title-font-weight);
+        color: var(--c-header-font-title-color);
     }
 
     &__link {
-        color: #fff;
+        color: var(--c-header-general-color-words);
         text-decoration: none;
         transition: 0.2s;
     }
 
     &__link:hover {
-        color: orange;
+        color: var(--c-header-font-title-color)
     }
 
     &__item--highlight &__highlight {
