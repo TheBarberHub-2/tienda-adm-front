@@ -1,0 +1,49 @@
+.c-header {
+    --c-header-font-family: var(--mlt-sys-font-family-default);
+    --c-header-width: var(--mlt-sys-fixed-width-725);
+    --c-header-padding: var(--mlt-sys-padding-5);
+    --c-header-gap: var(--mlt-sys-gap-5);
+    --c-header-background-color: var(--color-gris-3);
+
+    // Header_Brand
+    --c-header-box-title-font-size: var(--mlt-sys-font-size-5);
+    --c-header-font-title-color: var(--color-naranja-3);
+    --c-header-title-font-weight: var(--mlt-sys-font-weight-700);
+    // Header_Text
+    --c-header-navegador: var(--mlt-sys-gray-shade-10);
+
+    display: flex;
+    flex-direction: row;
+    background: var(--c-header-background-color);
+    padding: var(--c-header-padding);
+
+    &__brand-name {
+        font-size: var(--c-header-box-title-font-size);
+        margin: 0;
+    }
+
+    &__nav {
+        display: flex;
+        margin-left: auto;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__item {
+        margin-left: 1rem;
+    }
+
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        transition: 0.2s;
+    }
+
+    &__link:hover {
+        color: orange;
+    }
+
+    &__item--highlight &__highlight {
+        font-weight: bold;
+    }
+}

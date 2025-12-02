@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './c-footer.scss',
 })
 export class CFooter {
-
+  
 }

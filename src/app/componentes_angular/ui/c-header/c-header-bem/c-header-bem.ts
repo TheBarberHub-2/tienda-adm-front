@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './c-header-bem.scss',
 })
 export class CHeaderBEM {
-
+numeroPedidos: number = 0;
 }

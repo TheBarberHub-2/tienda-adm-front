@@ -6,7 +6,7 @@ import { CHeaderBEM } from '../../ui/c-header/c-header-bem/c-header-bem';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CHeaderBootstrap,CHeaderBEM, CFooter],
+  imports: [RouterOutlet, CHeaderBootstrap, CHeaderBEM, CFooter],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
