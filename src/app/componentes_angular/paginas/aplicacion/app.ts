@@ -5,9 +5,10 @@ import { CFooterBootstrap } from '../../ui/c-footer/c-footer-bootstrap/c-footer-
 import { CHeaderBEM } from '../../ui/c-header/c-header-bem/c-header-bem';
 import { CFooterBem } from "../../ui/c-footer/c-footer-bem/c-footer-bem";
 
+import { Inicio } from '../../paginas/inicio/inicio';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CHeaderBootstrap, CHeaderBEM, CFooterBootstrap, CFooterBem],
+  imports: [RouterOutlet, CHeaderBootstrap, CHeaderBEM, CFooterBootstrap, CFooterBem, Inicio],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
