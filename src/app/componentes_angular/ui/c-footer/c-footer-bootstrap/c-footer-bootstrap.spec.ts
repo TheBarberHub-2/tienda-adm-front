@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CFooter } from './c-footer';
+import { CFooterBootstrap } from './c-footer-bootstrap';
 
-describe('CFooter', () => {
-  let component: CFooter;
-  let fixture: ComponentFixture<CFooter>;
+describe('CFooterBootstrap', () => {
+  let component: CFooterBootstrap;
+  let fixture: ComponentFixture<CFooterBootstrap>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CFooter]
+      imports: [CFooterBootstrap]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CFooter);
+    fixture = TestBed.createComponent(CFooterBootstrap);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
