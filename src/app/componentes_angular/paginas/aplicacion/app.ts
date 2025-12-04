@@ -6,12 +6,30 @@ import { CHeaderBEM } from '../../ui/c-header/c-header-bem/c-header-bem';
 import { CFooterBem } from "../../ui/c-footer/c-footer-bem/c-footer-bem";
 
 import { Inicio } from '../../paginas/inicio/inicio';
+import { CUserTabla } from '../../ui/c-user-tabla/c-user-tabla';
+import { UserService } from '../../../services/user.service';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CHeaderBootstrap, CHeaderBEM, CFooterBootstrap, CFooterBem, Inicio],
+  imports: [RouterOutlet, CHeaderBootstrap, CHeaderBEM, CFooterBootstrap, CFooterBem, Inicio, CUserTabla],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('tienda-adm-front');
+  constructor(private userService: UserService) { }
+
+  ngOnInit() {
+    this.userService.obtenerUsuarios().subscribe((usuarios) => {
+      console.log(usuarios);
+    });
+  }
+
+
+
+
+
+
+
+
+
+
 }

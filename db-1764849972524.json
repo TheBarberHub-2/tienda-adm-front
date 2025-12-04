@@ -1,0 +1,34 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "email": "admin@thebarberhub.com",
+      "nombre": "Administrador",
+      "rol": "Admin"
+    },
+    {
+      "id": 2,
+      "email": "peluqueria_valencia@gmail.com",
+      "nombre": "Barbería Valencia",
+      "rol": "Peluqueria"
+    },
+    {
+      "id": 3,
+      "email": "peluqueria_madrid@gmail.com",
+      "nombre": "Barbería Madrid",
+      "rol": "Peluqueria"
+    },
+    {
+      "id": 4,
+      "email": "juan.cliente@gmail.com",
+      "nombre": "Juan Pérez",
+      "rol": "Cliente"
+    },
+    {
+      "id": 5,
+      "email": "maria.cliente@gmail.com",
+      "nombre": "María López",
+      "rol": "Cliente"
+    }
+  ]
+}

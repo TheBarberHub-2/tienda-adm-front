@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CCardProduct } from './c-card-product';
+import { AdministrarUsuarios } from './administrar-usuarios';
 
-describe('CCardProduct', () => {
-  let component: CCardProduct;
-  let fixture: ComponentFixture<CCardProduct>;
+describe('AdministrarUsuarios', () => {
+  let component: AdministrarUsuarios;
+  let fixture: ComponentFixture<AdministrarUsuarios>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CCardProduct]
+      imports: [AdministrarUsuarios]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CCardProduct);
+    fixture = TestBed.createComponent(AdministrarUsuarios);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
