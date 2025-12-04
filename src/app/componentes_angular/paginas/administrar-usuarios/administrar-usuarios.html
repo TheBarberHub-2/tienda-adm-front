@@ -1,1 +1,39 @@
-<p>administrar-usuarios works!</p>
+<!-- <br>
+<h3>Listado de Tareas</h3>
+<div style="width:75%">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr class="filters">
+        <th>id</th>
+        <th>nombre</th>
+        <th>estado
+          <select [(ngModel)]="filtroActual">
+            <option value="Todas">Todas</option>
+            <option value="Cliente">Cliente</option>
+            <option value="Peluqueria">Peluqueria</option>
+            <option value="Administrador">Administrador</option>
+          </select>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (u of usuarios; track $index) {
+      @if (filtroActual == 'Todas' ? true : filtroActual == u.rol) {
+      <tr>
+        <td> {{u.id}} </td>
+        <td> {{u.nombre}} </td>
+        <td> {{u.rol}} </td>
+        <td>
+          <button class="btn btn-success"
+            [routerLink]="'/actualizarUsuario/'+u.id">Actualizar</button>
+          <button class="btn btn-danger" (click)="removeTask(u.id)">Eliminar</button>
+        </td>
+      </tr>
+      }
+      }
+    </tbody>
+  </table>
+
+  <h4>Total Usuarios: {{conteoUsuarios}} </h4>
+
+</div> -->

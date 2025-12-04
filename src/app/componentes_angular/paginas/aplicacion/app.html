@@ -2,13 +2,14 @@
 <header-bem></header-bem>
 <router-outlet />
 <user-tabla>
+    @for (usuario of usuarios; track $index) {
     <tr>
-        <td>111111</td>
-        <td>2222222333333</td>
-        <td>333333333333333</td>
-        <td>44444444444444</td>
-        <td>5444444444444</td>
+        <td>{{usuario.id}}</td>
+        <td>{{usuario.email}}</td>
+        <td>{{usuario.nombre}}</td>
+        <td>{{usuario.rol}}</td>
     </tr>
+    }
 </user-tabla>
 <footer-bem>
 </footer-bem>

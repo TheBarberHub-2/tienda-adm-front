@@ -8,6 +8,7 @@ import { CFooterBem } from "../../ui/c-footer/c-footer-bem/c-footer-bem";
 import { Inicio } from '../../paginas/inicio/inicio';
 import { CUserTabla } from '../../ui/c-user-tabla/c-user-tabla';
 import { UserService } from '../../../services/user.service';
+import { Usuario } from '../../../models/usuario';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, CHeaderBootstrap, CHeaderBEM, CFooterBootstrap, CFooterBem, Inicio, CUserTabla],
@@ -15,12 +16,20 @@ import { UserService } from '../../../services/user.service';
   styleUrl: './app.scss'
 })
 export class App {
+  usuarios: Usuario[] = []
   constructor(private userService: UserService) { }
 
   ngOnInit() {
-    this.userService.obtenerUsuarios().subscribe((usuarios) => {
-      console.log(usuarios);
-    });
+    this.userService.getAll().subscribe(
+      {
+        next: (usuarios) => {
+          this.usuarios = usuarios;
+        },
+        error: (error) => {
+          console.log(error);
+        }
+      }
+    );
   }
 
 
