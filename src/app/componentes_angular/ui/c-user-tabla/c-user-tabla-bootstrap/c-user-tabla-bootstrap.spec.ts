@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CUserTabla } from './c-user-tabla';
+import { CUserTablaBootstrap } from './c-user-tabla-bootstrap';
 
-describe('CUserTabla', () => {
-  let component: CUserTabla;
-  let fixture: ComponentFixture<CUserTabla>;
+describe('CUserTablaBootstrap', () => {
+  let component: CUserTablaBootstrap;
+  let fixture: ComponentFixture<CUserTablaBootstrap>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CUserTabla]
+      imports: [CUserTablaBootstrap]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CUserTabla);
+    fixture = TestBed.createComponent(CUserTablaBootstrap);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

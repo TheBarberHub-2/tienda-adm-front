@@ -6,30 +6,20 @@ import { CHeaderBEM } from '../../ui/c-header/c-header-bem/c-header-bem';
 import { CFooterBem } from "../../ui/c-footer/c-footer-bem/c-footer-bem";
 
 import { Inicio } from '../../paginas/inicio/inicio';
-import { CUserTabla } from '../../ui/c-user-tabla/c-user-tabla';
+import { CUserTablaBootstrap } from '../../ui/c-user-tabla/c-user-tabla-bootstrap/c-user-tabla-bootstrap';
 import { UserService } from '../../../services/user.service';
 import { Usuario } from '../../../models/usuario';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CHeaderBootstrap, CHeaderBEM, CFooterBootstrap, CFooterBem, Inicio, CUserTabla],
+  imports: [RouterOutlet, CHeaderBootstrap, CHeaderBEM, CFooterBootstrap, CFooterBem, Inicio, CUserTablaBootstrap],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  usuarios: Usuario[] = []
+
   constructor(private userService: UserService) { }
 
   ngOnInit() {
-    this.userService.getAll().subscribe(
-      {
-        next: (usuarios) => {
-          this.usuarios = usuarios;
-        },
-        error: (error) => {
-          console.log(error);
-        }
-      }
-    );
   }
 
 
