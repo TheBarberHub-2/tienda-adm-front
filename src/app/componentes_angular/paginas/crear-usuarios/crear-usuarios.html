@@ -1,19 +1,15 @@
 <div class="usuario-mod-container">
     <div class="form-wrapper">
-        <h2>Actualizar Usuario</h2>
+        <h2>Crear Usuario</h2>
 
-        @if (loadError) {
+        @if (createError) {
         <div class="error-callout">
-            No se pudo cargar o actualizar el usuario. Inténtalo de nuevo.
+            No se pudo crear el usuario. Inténtalo de nuevo.
         </div>
         }
 
         <form [formGroup]="usuarioForm" (ngSubmit)="onSubmitUsuario()">
-            <div class="form-group">
-                <label for="id">ID</label>
-                <input id="id" type="number" formControlName="id" readonly />
-            </div>
-
+            
             <div class="form-group">
                 <label for="email">Email *</label>
                 <input type="email" id="email" formControlName="email"
@@ -48,9 +44,9 @@
 
             <div class="form-actions">
                 <button type="submit" [disabled]="usuarioForm.invalid" class="btn-submit">
-                    Guardar Cambios
+                    Crear Usuario
                 </button>
-                <button type="button" class="btn-cancel" routerLink="/">
+                <button type="button" class="btn-cancel" routerLink="/administrar-usuarios">
                     Cancelar
                 </button>
             </div>

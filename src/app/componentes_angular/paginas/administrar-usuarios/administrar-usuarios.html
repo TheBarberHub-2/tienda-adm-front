@@ -1,3 +1,21 @@
+<main class="container py-5">
+
+
+    <!-- HERO / BANNER (no header) -->
+    <section class="hero p-4 p-md-5 mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-7">
+                <h1 class="display-6 fw-bold">Bienvenido a la parte de Admin de Usuarios de la Barberia</h1>
+                <p class="lead text-muted">Lo último en administración de usuarios</p>
+
+            <button class="btn btn-success mt-5" routerLink="/add">Añadir Nuevo Articulo</button>
+
+        </div>
+    </div>
+    </section>
+    
+
+
 <user-tabla-bootstrap>
   @for (usuario of usuarios; track $index) {
   <tr>
@@ -12,6 +30,8 @@
   </tr>
   }
 </user-tabla-bootstrap>
+
+</main>
 
 <!-- <br>
 <h3>Listado de Tareas</h3>
